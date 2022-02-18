@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+    # Ignore changes on README.md to save energy (no build necessary)
+    paths-ignore:
+      - "**/README.md"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
