@@ -1,13 +1,28 @@
 {
   "name": "accessible-menu-bootstrap-examples",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandrasch/accessible-menu-bootstrap-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mandrasch/accessible-menu-bootstrap-examples/issues"
+  },
+  "homepage": "https://github.com/mandrasch/accessible-menu-bootstrap-examples#readme",
   "devDependencies": {
-    "vite": "^2.8.0"
+    "@11ty/eleventy": "^1.0.0"
   }
 }
