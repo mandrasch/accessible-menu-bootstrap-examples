@@ -41,8 +41,6 @@ jobs:
       #   run: |
       #    npm install
       #    npm run build
-      #  env:
-      #    ELEVENTY_PATH_PREFIX: '11ty-plain-bootstrap5'
 
       #- name: 📂 Sync files
       #  uses: SamKirkland/FTP-Deploy-Action@4.1.0
