@@ -20,9 +20,11 @@ jobs:
       # This build runs with path prefix for github pages (hosted on subdirectory),
       # for example https://<USER>.github.io/<REPO-NAME>/
       # See: https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix
+      # old way doesnt work anymore ?npm run build -- --pathprefix="${{ github.event.repository.name }}"
       - name: Install and Build for Github Pages 🔧
         run: |
           npm install
+          npx mix --production
           npx @11ty/eleventy --pathprefix="${{ github.event.repository.name }}"
 
       - name: Deploy to Github Pages 🚀
