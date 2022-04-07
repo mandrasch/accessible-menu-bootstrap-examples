@@ -7,6 +7,7 @@ Live: https://mandrasch.github.io/accessible-menu-bootstrap-examples/
 
 Background: https://github.com/NickDJM/accessible-menu-bootstrap-5/issues/6
 
-Thanks to https://github.com/bergwerk/11ty-mix!
+## Credits
 
-Made with Eleventy 🧡.
+- Thanks to https://github.com/bergwerk/11ty-mix!
+- Made with Eleventy 🧡.
