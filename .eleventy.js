@@ -1,11 +1,17 @@
 const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
-    // Copy the `assets` folder to the output
-    eleventyConfig.addPassthroughCopy("assets");
+    // Copy dist folder to output
+    eleventyConfig.addPassthroughCopy("dist");
 
     // Watch changes in the assets folder
-    eleventyConfig.addWatchTarget("./assets/");
+    eleventyConfig.addWatchTarget("./dist/");
+
+    // https://github.com/bergwerk/11ty-mix/blob/main/.eleventy.js
+    eleventyConfig.setBrowserSyncConfig({
+        files: ['dist/**/*']
+    })
+    eleventyConfig.setDataDeepMerge(true)
 
     return {
         // Control which files Eleventy will process

@@ -11,7 +11,7 @@
     <meta http-equiv="Expires" content="0" />
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ '/assets/css/bs4/bootstrap.min.css' | url }}" rel="stylesheet" />
+    <link href="{{ '/dist/app.css' | url }}" rel="stylesheet" />
     <style type="text/css">
       main {
         margin-top: 50px;
@@ -23,11 +23,7 @@
     <main role="main" class="container">
       {{ content | safe }}
     </main>
-    <!-- Bootstrap Core -->
-    <script src="{{ '/assets/js/bs4/jquery/jquery.slim.min.js' | url }}"></script>
-    <script src="{{ '/assets/js/bs4/bootstrap/bootstrap.bundle.min.js' | url }}"></script>
 
-    <!-- Accessible Menu package by NickDJM -->
-    <script src="{{ '/assets/js/bs4/accessible-menu-bs4/accessible-menu-bs4.js' | url }}"></script>
+    <script src="{{ '/dist/app.js' | url }}"></script>
   </body>
 </html>
