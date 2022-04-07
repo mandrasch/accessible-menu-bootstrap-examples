@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - Bootstrap 5 examples</title>
+
+    <!-- Disable browser caching for testing -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/dist/app.css" rel="stylesheet" />
+    <style type="text/css">
+      main {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main role="main" class="container">
+      
+<a href="/">&laquo; Back to home</a>
+<div class="menu-examples-container my-5">
+  <!-- // Single Level Menu Example // -->
+
+  <div class="mb-5">
+    <h2>Single Level Menu Example</h2>
+
+    <nav id="main-nav-single-level" aria-label="Main" class="navbar navbar-light bg-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact" class="nav-link">Contact me</a>
+        </li>
+      </ul>
+    </nav>
+    <small class="form-text mt-2"
+      >The CSS property "flex-direction: row" is added with navbar-expand-lg,therefore it is set to "column" by default,
+      see next example.</small
+    >
+  </div>
+
+  <!-- // Single Level Menu with Toggle Example // -->
+
+  <div class="mb-5">
+    <h2>Single Level Menu with Toggle Example</h2>
+
+    <nav
+      id="main-nav-single-level-menu-with-toggle"
+      aria-label="Main"
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <button aria-label="Toggle main menu" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul id="main-menu" class="navbar-nav">
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- // Two Level Menu with Toggle Example (Disclosure) // -->
+  <div class="mb-5">
+    <h2>Two Level Menu with Toggle Example (Disclosure)</h2>
+    <nav
+      id="main-nav-two-level-menu-with-toggle"
+      aria-label="Main"
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <button aria-label="Toggle main menu" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Projects</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a href="/projects/awesome" class="dropdown-item">Awesome project</a>
+              </li>
+              <li class="nav-item">
+                <a href="/projects/not-so-awesome" class="dropdown-item">Not-so-awesome project</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- // Two Level Menu with Toggle Example (Menubar) // -->
+  <div class="mb-5">
+    <h2>Two Level Menu with Toggle Example (Menubar)</h2>
+    <nav
+      id="main-nav-two-level-menu-with-toggle-menubar"
+      aria-label="Main"
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <button aria-label="Toggle main menu" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Projects</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a href="/projects/awesome" class="dropdown-item">Awesome project</a>
+              </li>
+              <li class="nav-item">
+                <a href="/projects/not-so-awesome" class="dropdown-item">Not-so-awesome project</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+    </main>
+
+    <script src="/dist/app.js"></script>
+  </body>
+</html>
